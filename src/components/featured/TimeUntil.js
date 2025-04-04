@@ -11,7 +11,7 @@ const TimeUntil = () => {
 
   const renderItem = (time, value) => (
     <div className="countdown_item">
-      <div className="countdown_time">{time}</div>
+      <div className="countdown_time">{time < 10 ? `0${time}` : time</div>
       <div className="countdown_tag">{value}</div>
     </div>
   );
